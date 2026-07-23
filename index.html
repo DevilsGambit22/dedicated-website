@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="And Chess For All — an inclusive online and over-the-board chess community.">
+  <title>And Chess For All</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="gold-matrix" aria-hidden="true"></canvas>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="And Chess For All home">
+      <img src="assets/acfa-logo.jpg" alt="And Chess For All Lady Justice emblem">
+      <span><strong>And Chess For All</strong><small>Every Player Belongs • Every Move Matters</small></span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" aria-label="Primary navigation">
+      <a href="#home">Home</a><a href="#league">League</a><a href="#course">Recommended Course</a>
+      <a href="#chesscom">Chess.com</a><a href="#local">Local Events</a><a href="#discord">Discord</a>
+      <a href="#socials">Socials</a><a href="#support">Support ACFA</a><a href="#contact">Contact</a><a href="#store">Store</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero section active-page" data-page="home">
+      <div class="hero-copy">
+        <p class="eyebrow">ONLINE + OVER-THE-BOARD CHESS COMMUNITY</p>
+        <h1 id="greeting">Welcome to And Chess For All</h1>
+        <p class="lead">A welcoming international chess community built around competition, learning, friendship, and accessible events—online through Chess.com and in person.</p>
+        <div class="actions">
+          <a class="button primary" href="https://www.chess.com/club/and-chess-for-all-official" target="_blank" rel="noopener">Join ACFA Official</a>
+          <a class="button" href="https://www.chess.com/clubs/events/and-chess-for-all-official" target="_blank" rel="noopener">View Club Events</a>
+        </div>
+      </div>
+      <div class="logo-orbit" aria-label="And Chess For All Lady Justice emblem">
+        <span class="orbit orbit-one"><i></i></span>
+        <span class="orbit orbit-two"><i></i></span>
+        <span class="orbit orbit-three"><i></i></span>
+        <img class="hero-emblem" src="assets/acfa-logo.jpg" alt="Lady Justice holding balanced scales with chess pieces">
+      </div>
+    </section>
+
+    <section class="section dashboard active-page" data-page="home" aria-labelledby="events-heading">
+      <div class="section-heading"><div><p class="eyebrow">LIVE CLUB DASHBOARD</p><h2 id="events-heading">ACFA activity</h2></div><button id="refresh-events" class="text-button" type="button">Refresh</button></div>
+      <div class="stats-grid">
+        <article class="stat"><span>Members</span><strong id="member-count">—</strong><small>ACFA Official</small></article>
+        <article class="stat"><span>Current matches</span><strong id="current-count">—</strong><small>Club daily matches</small></article>
+        <article class="stat"><span>Upcoming matches</span><strong id="upcoming-count">—</strong><small>Scheduled events</small></article>
+      </div>
+      <div id="events-status" class="status" role="status">Loading public Chess.com club data…</div>
+      <div id="events-grid" class="card-grid"></div>
+    </section>
+
+    <section id="league" class="section page" data-page="league">
+      <p class="eyebrow">ACFA LEAGUE</p><h1>Register your club</h1>
+      <p class="lead narrow">The ACFA League connects chess communities through organized club competition while allowing each club to preserve its own identity and home community.</p>
+      <div class="info-grid">
+        <article><h3>Team format</h3><p>League events are club-versus-club competitions. Event rosters generally use a minimum of three and maximum of ten participating players, with backup players permitted between events.</p></article>
+        <article><h3>Featured competition</h3><p>Club Daily Matches are the main league format, supported by Vote Chess, arenas, Swiss tournaments, and approved special events.</p></article>
+        <article><h3>Club representation</h3><p>Players represent their organic club. A player already participating in an active daily match cannot be replaced during that match.</p></article>
+      </div>
+      <a class="button primary" href="https://tally.so/r/MeQaap" target="_blank" rel="noopener">Register Your Club</a>
+    </section>
+
+    <section id="course" class="section page" data-page="course">
+      <p class="eyebrow">RECOMMENDED COURSE</p><h1>The GothamChess 1.e4 Repertoire</h1>
+      <div class="feature-panel">
+        <div><h2>Build a practical opening repertoire</h2><p>This Chess.com course offers a structured 1.e4 repertoire designed to give players clear plans, recurring ideas, and practical responses against common defenses.</p><p>Recommended for players who want a consistent first-move system with instructional explanations rather than a collection of disconnected opening lines.</p><a class="button primary" href="https://www.chess.com/course/the-gothamchess-1-e4-repertoire-147580?ref_id=545854877" target="_blank" rel="sponsored noopener">View the Course</a></div>
+        <div class="course-mark">1.e4</div>
+      </div>
+      <p class="disclosure">Affiliate disclosure: ACFA may receive referral credit when eligible Chess.com links on this site are used.</p>
+    </section>
+
+    <section id="chesscom" class="section page" data-page="chesscom">
+      <p class="eyebrow">PLAY • LEARN • CONNECT</p><h1>Chess.com</h1>
+      <img class="chess-logo" src="assets/chesscom-logo.png" alt="Chess.com">
+      <p class="lead narrow">Chess.com is the online home of ACFA Official. Members use the platform for club matches, arenas, Vote Chess, puzzles, lessons, analysis, and community events.</p>
+      <div class="offer-grid">
+        <article><h2>Create a free account</h2><p>Join Chess.com, then become part of ACFA Official to participate in our online community and events.</p><a class="button primary" href="https://www.chess.com/register?ref_id=545854877" target="_blank" rel="sponsored noopener">Sign Up for Chess.com</a></article>
+        <article><img src="assets/go-premium.png" alt="Go Premium"><h2>Upgrade your membership</h2><p>Explore premium learning, analysis, puzzles, and other membership features offered by Chess.com.</p><a class="button" href="https://www.chess.com/membership?ref_id=545854877" target="_blank" rel="sponsored noopener">View Premium Options</a></article>
+      </div>
+      <p class="disclosure">Chess.com trademarks and supplied promotional graphics belong to Chess.com. Affiliate links may provide referral credit to ACFA.</p>
+    </section>
+
+    <section id="local" class="section page" data-page="local">
+      <p class="eyebrow">OVER-THE-BOARD CHESS</p><h1>Local events</h1>
+      <p class="lead narrow">ACFA Official is an online and OTB hybrid community. This page will highlight public meetups, tournaments, library events, college events, and other approved in-person chess opportunities.</p>
+      <div class="map-layout">
+        <iframe title="Google Map showing chess locations around San Antonio, Texas" src="https://www.google.com/maps?q=chess+San+Antonio+Texas&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="event-placeholder"><h2>Upcoming OTB events</h2><p>Approved events will display here with date, venue, accessibility information, entry cost, registration link, and directions.</p><p class="muted">No public ACFA-hosted local event has been posted yet.</p></div>
+      </div>
+    </section>
+
+    <section id="discord" class="section page" data-page="discord">
+      <img class="section-icon" src="assets/discord.webp" alt="Discord logo"><p class="eyebrow">COMMUNITY CHAT</p><h1>Join the ACFA Discord</h1>
+      <p class="lead narrow">Continue the conversation beyond the board. Our Discord supports announcements, event coordination, community discussion, streaming updates, and friendly chess conversation.</p>
+      <a class="button primary" href="https://discord.gg/Atk2GKfgU" target="_blank" rel="noopener">Join Discord</a>
+    </section>
+
+    <section id="socials" class="section page" data-page="socials">
+      <p class="eyebrow">FOLLOW ACFA</p><h1>Socials</h1>
+      <div class="social-grid">
+        <a href="https://www.instagram.com/andchessforallofficial?igsh=eWdseHlraDl4dGlh&amp;utm_source=qr" target="_blank" rel="noopener"><img src="assets/instagram.jpeg" alt="Instagram logo"><strong>Instagram</strong><span>Photos and community updates</span></a>
+        <a href="https://www.facebook.com/share/g/1E6ZTXwHtB/?mibextid=wwXIfr" target="_blank" rel="noopener"><img src="assets/facebook.png" alt="Facebook logo"><strong>Facebook</strong><span>Community posts and announcements</span></a>
+        <a href="https://www.tiktok.com/@and_chess_for_all?_r=1&amp;_t=ZT-98HWJ1INhUM" target="_blank" rel="noopener"><img src="assets/tiktok.webp" alt="TikTok logo"><strong>TikTok</strong><span>Short-form ACFA chess content</span></a>
+        <a href="https://www.twitch.tv/dasoulking98" target="_blank" rel="noopener"><img src="assets/twitch.png" alt="Twitch logo"><strong>Twitch</strong><span>Live chess and community streams</span></a>
+        <a href="https://youtube.com/@andchessforall?si=V7De7hMqAWKD5s3d" target="_blank" rel="noopener"><img src="assets/youtube.webp" alt="YouTube logo"><strong>YouTube</strong><span>ACFA videos and features</span></a>
+        <a href="https://discord.gg/Atk2GKfgU" target="_blank" rel="noopener"><img src="assets/discord.webp" alt="Discord logo"><strong>Discord</strong><span>Community chat and event coordination</span></a>
+      </div>
+    </section>
+
+
+    <section id="support" class="section page" data-page="support">
+      <p class="eyebrow">SUPPORT THE COMMUNITY</p><h1>Support And Chess For All</h1>
+      <p class="lead narrow">Help ACFA create more competitive opportunities. Donations made through Venmo and eligible support generated through our Chess.com affiliate links are directed toward club tournament prize money and community events.</p>
+
+      <div class="support-layout">
+        <article class="venmo-card">
+          <div>
+            <p class="eyebrow">DIRECT SUPPORT</p>
+            <h2>Donate with Venmo</h2>
+            <p>Scan the official ACFA QR code or open our Venmo profile to contribute directly.</p>
+            <p class="venmo-handle">@AndChessForAll</p>
+            <a class="button primary" href="https://venmo.com/u/AndChessForAll" target="_blank" rel="noopener">Open Venmo</a>
+          </div>
+          <a class="qr-link" href="https://venmo.com/u/AndChessForAll" target="_blank" rel="noopener" aria-label="Open the And Chess For All Venmo profile">
+            <img src="assets/acfa-venmo-qr.jpeg" alt="Venmo QR code for And Chess For All Official at AndChessForAll">
+          </a>
+        </article>
+
+        <article class="affiliate-card">
+          <p class="eyebrow">SUPPORT THROUGH CHESS.COM</p>
+          <h2>Use our official affiliate links</h2>
+          <p>Creating a Chess.com account or reviewing Premium through these links may generate affiliate support for ACFA at no additional cost to you.</p>
+          <div class="actions">
+            <a class="button primary" href="https://www.chess.com/register?ref_id=545854877" target="_blank" rel="sponsored noopener">Create a Free Account</a>
+            <a class="button" href="https://www.chess.com/membership?ref_id=545854877" target="_blank" rel="sponsored noopener">View Premium Options</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="funding-panel">
+        <p class="eyebrow">WHERE SUPPORT GOES</p>
+        <h2>Funding competition and community events</h2>
+        <div class="funding-grid">
+          <article><span aria-hidden="true">🏆</span><h3>Tournament prize money</h3><p>Prize pools for approved ACFA tournaments and competitive club events.</p></article>
+          <article><span aria-hidden="true">♟️</span><h3>Club events</h3><p>Resources and prizes that help ACFA host engaging online and over-the-board events.</p></article>
+        </div>
+        <p class="transparency-note"><strong>Our commitment:</strong> Venmo donations and eligible Chess.com affiliate proceeds are used to directly support ACFA tournament prize money and events.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section page" data-page="contact">
+      <p class="eyebrow">GET IN TOUCH</p><h1>Contact ACFA</h1>
+      <div class="contact-panel">
+        <img src="assets/acfa-logo.jpg" alt="And Chess For All Lady Justice emblem">
+        <div>
+          <h2>Contact And Chess For All Official</h2>
+          <p class="lead">Questions about the club, league registration, events, partnerships, or the website can be sent directly to our official email address.</p>
+          <p class="contact-email">andchessforalloffical1@gmail.com</p>
+          <a class="button primary" href="mailto:andchessforalloffical1@gmail.com?subject=ACFA%20Inquiry">Email ACFA</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="store" class="section page" data-page="store">
+      <p class="eyebrow">ACFA STORE</p><h1>Merchandise coming soon</h1>
+      <p class="lead narrow">ACFA merchandise is being planned. Products will not be offered for sale until production, pricing, fulfillment, and availability are confirmed.</p>
+      <div class="store-grid">
+        <article><span>01</span><h2>Shirts</h2><p>ACFA apparel featuring official community branding.</p><b>Coming soon</b></article>
+        <article><span>02</span><h2>Hoodies</h2><p>Warm, durable designs for online and OTB events.</p><b>Coming soon</b></article>
+        <article><span>03</span><h2>Stickers</h2><p>Lady Justice and ACFA identity designs.</p><b>Coming soon</b></article>
+        <article><span>04</span><h2>Handmade chessboards</h2><p>Individually crafted boards planned for a future release.</p><b>Coming soon</b></article>
+      </div>
+    </section>
+  </main>
+
+  <div class="animation-control"><label><input id="motion-toggle" type="checkbox" checked> Knight animation</label></div>
+  <div id="knight-stage" aria-hidden="true"><div id="blue-knight" class="knight blue walk"></div><div id="red-knight" class="knight red walk"></div></div>
+
+  <footer class="site-footer">
+    <img src="assets/acfa-logo.jpg" alt="And Chess For All Lady Justice emblem">
+    <p><strong>And Chess For All</strong><br>Every Player Belongs • Every Move Matters</p>
+    <p>© <span id="year"></span> DevilsGambit22. All Rights Reserved.</p>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
